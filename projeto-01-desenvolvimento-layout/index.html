@@ -3,34 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto 01 - Em desenvolvimento</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: #f8fafc;
-        color: #0f172a;
-      }
-      .box {
-        text-align: center;
-        max-width: 540px;
-        padding: 24px;
-      }
-      a {
-        color: #0f766e;
-        text-decoration: none;
-        font-weight: 600;
-      }
-    </style>
+    <title>Projeto 01 | Desenvolvimento do Layout</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <main class="box">
-      <h1>Projeto 01 - Desenvolvimento do Layout</h1>
-      <p>Pagina temporaria. O desenvolvimento completo sera adicionado nesta rota.</p>
-      <p><a href="../">Voltar para a pagina inicial</a></p>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#" aria-label="Logo">Brand</a>
+        <nav class="site-nav" aria-label="Navegacao principal">
+          <a href="#">Home</a>
+          <a href="#">Categorias</a>
+          <a href="#">Ofertas</a>
+          <a href="#">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Estrutura inicial pronta para implementar o layout do Figma</h1>
+          <p>
+            Substitua textos, imagens e estilos com fidelidade total ao design de referencia.
+          </p>
+        </div>
+      </section>
+
+      <section class="search-section" aria-labelledby="search-title">
+        <div class="container">
+          <h2 id="search-title">Busca</h2>
+          <form class="search-form" id="search-form">
+            <label for="search-input" class="visually-hidden">Buscar assunto</label>
+            <input
+              id="search-input"
+              name="search"
+              type="text"
+              placeholder="Digite um assunto"
+              autocomplete="off"
+            />
+            <button type="submit" id="search-button" aria-label="Buscar">
+              🔍
+            </button>
+          </form>
+          <p id="search-result" class="search-result" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="carousel-section" aria-labelledby="carousel-title-1">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="carousel-title-1">Carrossel 1</h2>
+            <div class="controls">
+              <button type="button" class="carousel-prev" data-target="carousel-1" aria-label="Anterior">
+                ◀
+              </button>
+              <button type="button" class="carousel-next" data-target="carousel-1" aria-label="Proximo">
+                ▶
+              </button>
+            </div>
+          </div>
+          <div class="carousel-track" id="carousel-1">
+            <article class="carousel-item">Item 1</article>
+            <article class="carousel-item">Item 2</article>
+            <article class="carousel-item">Item 3</article>
+            <article class="carousel-item">Item 4</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-section" aria-labelledby="carousel-title-2">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="carousel-title-2">Carrossel 2</h2>
+            <div class="controls">
+              <button type="button" class="carousel-prev" data-target="carousel-2" aria-label="Anterior">
+                ◀
+              </button>
+              <button type="button" class="carousel-next" data-target="carousel-2" aria-label="Proximo">
+                ▶
+              </button>
+            </div>
+          </div>
+          <div class="carousel-track" id="carousel-2">
+            <article class="carousel-item">Item 1</article>
+            <article class="carousel-item">Item 2</article>
+            <article class="carousel-item">Item 3</article>
+            <article class="carousel-item">Item 4</article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
