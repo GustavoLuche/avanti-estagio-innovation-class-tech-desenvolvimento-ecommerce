@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVANTI - Desafios Tecnicos</title>
+    <style>
+      :root {
+        --bg: #f7f4ee;
+        --surface: #fffdf8;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #0f766e;
+        --accent-2: #155e75;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top right, #d1fae5 0%, transparent 45%),
+          radial-gradient(circle at bottom left, #cffafe 0%, transparent 40%),
+          var(--bg);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+      }
+
+      .card p {
+        margin-bottom: 14px;
+      }
+
+      a.button {
+        display: inline-block;
+        text-decoration: none;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+
+      .footer {
+        margin-top: 22px;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>AVANTI - Innovation Class Tech</h1>
+      <p>Repositorio com os dois desafios tecnicos da etapa de selecao.</p>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Projeto 01 - Desenvolvimento do Layout</h2>
+          <p>Implementacao em HTML, CSS e JavaScript, com foco em fidelidade ao Figma.</p>
+          <a class="button" href="./projeto-01-desenvolvimento-layout/">Acessar Projeto 01</a>
+        </article>
+
+        <article class="card">
+          <h2>Projeto 02 - Busca de Perfil no GitHub</h2>
+          <p>Aplicacao React com consumo da API do GitHub e tratamento de erros.</p>
+          <a class="button" href="./projeto-02-busca-perfil-github/">Acessar Projeto 02</a>
+        </article>
+      </section>
+
+      <p class="footer">Ultima atualizacao: 2026-07-03</p>
+    </main>
+  </body>
+</html>
