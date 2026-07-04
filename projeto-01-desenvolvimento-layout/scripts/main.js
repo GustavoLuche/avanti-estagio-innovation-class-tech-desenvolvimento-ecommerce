@@ -9,11 +9,11 @@ if (searchForm && searchInput && searchResult) {
     const query = searchInput.value.trim();
 
     if (!query) {
-      searchResult.textContent = 'Digite um termo para buscar.';
+      searchResult.textContent = '';
       return;
     }
 
-    searchResult.textContent = `Voce buscou por: '${query}'`;
+    searchResult.textContent = `Você buscou por: '${query}'`;
   });
 }
 
@@ -21,8 +21,8 @@ function moveCarousel(trackId, direction) {
   const track = document.querySelector(`#${trackId}`);
   if (!track) return;
 
-  const card = track.querySelector('.carousel-item');
-  const baseStep = card ? card.getBoundingClientRect().width + 12 : 220;
+  const card = track.querySelector('.product-card');
+  const baseStep = card ? card.getBoundingClientRect().width + 16 : 254;
   track.scrollBy({ left: direction * baseStep, behavior: 'smooth' });
 }
 

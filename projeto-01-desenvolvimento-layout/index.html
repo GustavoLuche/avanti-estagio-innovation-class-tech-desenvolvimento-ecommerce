@@ -3,96 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto 01 | Desenvolvimento do Layout</title>
+    <title>AVANTI | Super Sale</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="#" aria-label="Logo">Brand</a>
-        <nav class="site-nav" aria-label="Navegacao principal">
-          <a href="#">Home</a>
-          <a href="#">Categorias</a>
-          <a href="#">Ofertas</a>
-          <a href="#">Contato</a>
-        </nav>
+    <header>
+      <div class="top-promo">Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10</div>
+
+      <div class="header-main">
+        <div class="container header-main-content">
+          <a class="logo" href="#" aria-label="AVANTI">AVANTI</a>
+
+          <form class="header-search" id="search-form" role="search">
+            <label class="visually-hidden" for="search-input">Digite aqui o que voce procura</label>
+            <input id="search-input" name="search" type="search" placeholder="Digite aqui o que voce procura" />
+            <button type="submit" id="search-button" aria-label="Buscar">BUSCAR</button>
+          </form>
+
+          <div class="header-actions">
+            <a href="#">Ola, Nome do cliente!</a>
+            <button type="button" aria-label="Carrinho">CARRINHO</button>
+          </div>
+        </div>
       </div>
+
+      <nav class="departments">
+        <div class="container departments-content" aria-label="Categorias">
+          <a href="#">MENU Todas as Categorias</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+          <a href="#">Departamento</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1>Estrutura inicial pronta para implementar o layout do Figma</h1>
-          <p>
-            Substitua textos, imagens e estilos com fidelidade total ao design de referencia.
-          </p>
-        </div>
+      <section class="hero" aria-label="Super Sale">
+        <img src="./assets/images/hero.png" alt="Banner principal Super Sale" />
       </section>
 
-      <section class="search-section" aria-labelledby="search-title">
+      <section class="search-feedback-wrap">
         <div class="container">
-          <h2 id="search-title">Busca</h2>
-          <form class="search-form" id="search-form">
-            <label for="search-input" class="visually-hidden">Buscar assunto</label>
-            <input
-              id="search-input"
-              name="search"
-              type="text"
-              placeholder="Digite um assunto"
-              autocomplete="off"
-            />
-            <button type="submit" id="search-button" aria-label="Buscar">
-              🔍
-            </button>
-          </form>
           <p id="search-result" class="search-result" aria-live="polite"></p>
         </div>
       </section>
 
-      <section class="carousel-section" aria-labelledby="carousel-title-1">
+      <section class="products-block" aria-labelledby="carousel-title-1">
         <div class="container">
-          <div class="section-header">
-            <h2 id="carousel-title-1">Carrossel 1</h2>
-            <div class="controls">
-              <button type="button" class="carousel-prev" data-target="carousel-1" aria-label="Anterior">
-                ◀
-              </button>
-              <button type="button" class="carousel-next" data-target="carousel-1" aria-label="Proximo">
-                ▶
-              </button>
-            </div>
+          <div class="section-head">
+            <h2 id="carousel-title-1">Lancamentos</h2>
+            <a href="#">Ver mais</a>
           </div>
-          <div class="carousel-track" id="carousel-1">
-            <article class="carousel-item">Item 1</article>
-            <article class="carousel-item">Item 2</article>
-            <article class="carousel-item">Item 3</article>
-            <article class="carousel-item">Item 4</article>
+
+          <div class="carousel-shell">
+            <button class="carousel-arrow left carousel-prev" type="button" data-target="carousel-1" aria-label="Anterior">&lt;</button>
+            <div class="products-carousel" id="carousel-1">
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+            </div>
+            <button class="carousel-arrow right carousel-next" type="button" data-target="carousel-1" aria-label="Proximo">&gt;</button>
+          </div>
+
+          <div class="carousel-dots">. . .</div>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="container split-content">
+          <div class="media-box gray-box">
+            <img src="./assets/images/mug.png" alt="Caneca AVANTI" />
+          </div>
+          <div class="text-box">
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            </p>
+            <p>
+              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="carousel-section" aria-labelledby="carousel-title-2">
-        <div class="container">
-          <div class="section-header">
-            <h2 id="carousel-title-2">Carrossel 2</h2>
-            <div class="controls">
-              <button type="button" class="carousel-prev" data-target="carousel-2" aria-label="Anterior">
-                ◀
-              </button>
-              <button type="button" class="carousel-next" data-target="carousel-2" aria-label="Proximo">
-                ▶
-              </button>
-            </div>
+      <section class="feature-section">
+        <div class="container feature-content">
+          <div class="feature-text">
+            <h3>LOREM IPSUM</h3>
+            <ul>
+              <li>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+              <li>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+              <li>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+            </ul>
           </div>
-          <div class="carousel-track" id="carousel-2">
-            <article class="carousel-item">Item 1</article>
-            <article class="carousel-item">Item 2</article>
-            <article class="carousel-item">Item 3</article>
-            <article class="carousel-item">Item 4</article>
+          <div class="feature-media">
+            <img src="./assets/images/mug-kitchen.png" alt="Caneca AVANTI na bancada" />
           </div>
         </div>
       </section>
+
+      <section class="split-section reverse">
+        <div class="container split-content">
+          <div class="media-box gray-box">
+            <img src="./assets/images/mug.png" alt="Caneca AVANTI" />
+          </div>
+          <div class="text-box">
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+            </p>
+            <p>
+              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-block" aria-labelledby="carousel-title-2">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="carousel-title-2">Lancamentos</h2>
+            <a href="#">Ver mais</a>
+          </div>
+
+          <div class="carousel-shell">
+            <button class="carousel-arrow left carousel-prev" type="button" data-target="carousel-2" aria-label="Anterior">&lt;</button>
+            <div class="products-carousel" id="carousel-2">
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+              <article class="product-card"><img src="./assets/images/product-card.png" alt="Produto camiseta" /></article>
+            </div>
+            <button class="carousel-arrow right carousel-next" type="button" data-target="carousel-2" aria-label="Proximo">&gt;</button>
+          </div>
+
+          <div class="carousel-dots">. . .</div>
+        </div>
+      </section>
+
+      <section class="contact-banner" aria-label="Contato por regiao">
+        <img src="./assets/images/contact-bg.png" alt="Banner de contato AVANTI" />
+        <div class="contact-overlay">Entre em contato conosco e verifique a disponibilidade para sua regiao!</div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <h3>Cadastre-se na nossa <span>newsletter</span></h3>
+          <form class="newsletter-form">
+            <input type="text" placeholder="Digite seu nome" />
+            <input type="email" placeholder="Digite seu e-mail" />
+            <label><input type="checkbox" /> Estou de acordo com a Politica de Privacidade</label>
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div>
+          <div class="logo footer-logo">AVANTI</div>
+          <div class="socials">IG FB YT TT</div>
+        </div>
+
+        <ul>
+          <li><strong>Institucional</strong></li>
+          <li>Sobre Nos</li>
+          <li>Nossas Lojas</li>
+          <li>Privacidade e Seguranca</li>
+          <li>Termos e Condicoes</li>
+        </ul>
+
+        <ul>
+          <li><strong>Central de ajuda</strong></li>
+          <li>Fale Conosco</li>
+          <li>Frete e Entrega</li>
+          <li>Trocas e Devolucoes</li>
+          <li>Formas de Pagamento</li>
+          <li>FAQ</li>
+        </ul>
+
+        <ul>
+          <li><strong>Atendimento</strong></li>
+          <li>Telefone: (11) 1234-5678</li>
+          <li>E-mail: exemplo@exemplo.com.br</li>
+          <li>Horario: Seg a Sex - 09h as 18h</li>
+        </ul>
+      </div>
+
+      <div class="payments">VISA MASTERCARD ELO HIPERCARD PIX BOLETO</div>
+      <div class="legal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </footer>
 
     <script src="./scripts/main.js"></script>
   </body>
