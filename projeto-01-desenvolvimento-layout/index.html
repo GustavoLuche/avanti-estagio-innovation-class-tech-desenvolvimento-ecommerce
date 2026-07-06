@@ -13,17 +13,30 @@
 
       <div class="header-main">
         <div class="container header-main-content">
-          <a class="logo" href="#" aria-label="AVANTI">AVANTI</a>
+          <a class="logo" href="#" aria-label="AVANTI">
+            <img src="./assets/images/logo.svg" alt="AVANTI" class="logo-img" />
+          </a>
 
           <form class="header-search" id="search-form" role="search">
             <label class="visually-hidden" for="search-input">Digite aqui o que voce procura</label>
-            <input id="search-input" name="search" type="search" placeholder="Digite aqui o que voce procura" />
-            <button type="submit" id="search-button" aria-label="Buscar">BUSCAR</button>
+            <input id="search-input" name="search" type="search" placeholder="Digite aqui o que você procura" />
+            <button type="submit" id="search-button" aria-label="Buscar">
+              <img src="./assets/images/icon-search.svg" alt="" aria-hidden="true" />
+            </button>
           </form>
 
           <div class="header-actions">
-            <a href="#">Ola, Nome do cliente!</a>
-            <button type="button" aria-label="Carrinho">CARRINHO</button>
+            <a href="#" class="header-user">
+              <img src="./assets/images/icon-user.svg" alt="" aria-hidden="true" class="header-user-icon" />
+              <span class="header-user-text">
+                <span class="hello">Olá,</span>
+                <span class="customer-name">Nome cliente!</span>
+              </span>
+            </a>
+            <button type="button" class="header-cart" aria-label="Carrinho">
+              <img src="./assets/images/icon-cart.svg" alt="" aria-hidden="true" />
+              <span class="cart-badge">2</span>
+            </button>
           </div>
         </div>
       </div>

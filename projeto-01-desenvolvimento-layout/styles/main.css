@@ -69,12 +69,15 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  color: #111;
-  font-size: 36px;
-  line-height: 1;
-  letter-spacing: 2px;
-  font-weight: 800;
+}
+
+.logo-img {
+  width: 140px;
+  height: auto;
+  display: block;
 }
 
 .header-search {
@@ -96,29 +99,81 @@ body {
   border: 0;
   background: #fff;
   cursor: pointer;
-  font-size: 11px;
-  font-weight: 700;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.header-search button img {
+  width: 20px;
+  height: 20px;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
+  gap: 18px;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
   gap: 10px;
+  color: #4a4a4a;
+  text-decoration: none;
   font-size: 12px;
 }
 
-.header-actions a {
-  color: #4a4a4a;
-  text-decoration: none;
+.header-user-icon {
+  width: 24px;
+  height: 24px;
 }
 
-.header-actions button {
+.header-user-text {
+  display: grid;
+  gap: 2px;
+  line-height: 1;
+}
+
+.header-user-text .hello {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header-user-text .customer-name {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header-cart {
+  position: relative;
   border: 0;
   background: transparent;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.header-cart img {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #ff3b30;
+  color: #fff;
   font-size: 11px;
   font-weight: 700;
-  color: #4a4a4a;
-  cursor: pointer;
+  display: grid;
+  place-items: center;
 }
 
 .departments {
