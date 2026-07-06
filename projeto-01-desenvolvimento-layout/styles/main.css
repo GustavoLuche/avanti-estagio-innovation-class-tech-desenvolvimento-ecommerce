@@ -29,10 +29,22 @@ body {
   color: #fff;
   min-height: 24px;
   font-size: 11px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 4px 8px;
+  padding: 6px 12px;
+  gap: 10px;
+}
+
+.top-promo .promo-pill {
+  background: #6b2fe8;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
 }
 
 .header-main {
