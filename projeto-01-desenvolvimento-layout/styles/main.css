@@ -63,7 +63,7 @@ body {
 .header-main-content {
   min-height: 72px;
   display: grid;
-  grid-template-columns: 120px 1fr auto;
+  grid-template-columns: auto minmax(320px, 596px) auto;
   gap: 18px;
   align-items: center;
 }
@@ -75,23 +75,24 @@ body {
 }
 
 .logo-img {
-  width: 140px;
-  height: auto;
+  width: 153px;
+  height: 27px;
   display: block;
 }
 
 .header-search {
+  width: min(596px, 100%);
   display: grid;
   grid-template-columns: 1fr 44px;
   border: 1px solid #cfcfcf;
-  border-radius: 8px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .header-search input {
   border: 0;
-  min-height: 44px;
-  padding: 0 14px;
+  min-height: 40px;
+  padding: 0 16px;
   outline: none;
 }
 
@@ -101,12 +102,14 @@ body {
   cursor: pointer;
   display: grid;
   place-items: center;
+  width: 44px;
+  height: 40px;
   padding: 0;
 }
 
 .header-search button img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .header-actions {
@@ -149,7 +152,7 @@ body {
   position: relative;
   border: 0;
   background: transparent;
-  padding: 6px;
+  padding: 8px;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -162,18 +165,19 @@ body {
 
 .cart-badge {
   position: absolute;
-  top: 2px;
-  right: 2px;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 4px;
-  border-radius: 999px;
-  background: #ff3b30;
+  top: 0px;
+  right: 0px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: #005CFF;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   display: grid;
   place-items: center;
+  transform: translate(35%, -35%);
 }
 
 .departments {
