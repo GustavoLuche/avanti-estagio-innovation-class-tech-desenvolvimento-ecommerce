@@ -27,24 +27,29 @@ body {
 .top-promo {
   background: var(--deep-blue);
   color: #fff;
-  min-height: 24px;
-  font-size: 11px;
+  height: 30px; /* frame height from metadata */
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6px 12px;
+  padding: 0 12px;
   gap: 10px;
 }
 
 .top-promo .promo-pill {
-  background: #6b2fe8;
+  background: #5b2fe6; /* refined purple tone */
   color: #fff;
-  padding: 2px 8px;
-  border-radius: 999px;
+  min-width: 63px; /* from metadata: width 63 */
+  height: 16px; /* from metadata: height 16 */
+  line-height: 16px;
+  padding: 0 8px;
+  border-radius: 8px;
   font-weight: 800;
   font-size: 12px;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-main {
