@@ -27,25 +27,29 @@ body {
 .top-promo {
   background: var(--deep-blue);
   color: #fff;
-  height: 30px; /* frame height from metadata */
-  font-size: 12px;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif; /* Figma token */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 12px;
+  padding: 4px 12px; /* vertical padding to visually center within 30px frame */
+  min-height: 30px;
   gap: 10px;
 }
 
 .top-promo .promo-pill {
-  background: #5b2fe6; /* refined purple tone */
+  background: #6220C1; /* exact Figma color */
   color: #fff;
-  min-width: 63px; /* from metadata: width 63 */
-  height: 16px; /* from metadata: height 16 */
+  min-width: 63px;
+  height: 16px;
   line-height: 16px;
   padding: 0 8px;
-  border-radius: 8px;
-  font-weight: 800;
+  border-radius: 4px; /* Figma token */
+  font-weight: 700;
   font-size: 12px;
   display: inline-flex;
   align-items: center;
