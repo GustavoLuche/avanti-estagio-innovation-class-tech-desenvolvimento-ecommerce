@@ -122,11 +122,15 @@ window.addEventListener('load', () => {
         prevBtn.classList.add('swiper-button-prev');
       }
 
+      const dotsEl = shell.parentElement.querySelector('.carousel-dots');
+      if (dotsEl) dotsEl.textContent = '';
+
       // Initialize Swiper with loop enabled (continuous loop).
       // Loop needs more real slides than slidesPerView, otherwise Swiper
       // can't build enough duplicates and the navigation breaks.
       new Swiper(track, {
         slidesPerView,
+        slidesPerGroup: slidesPerView,
         spaceBetween: 16,
         loop: realSlideCount > slidesPerView,
         rewind: false,
@@ -134,6 +138,12 @@ window.addEventListener('load', () => {
           nextEl: nextBtn || '.swiper-button-next',
           prevEl: prevBtn || '.swiper-button-prev',
         },
+        pagination: dotsEl
+          ? {
+              el: dotsEl,
+              clickable: true,
+            }
+          : false,
       });
 
       track.dataset.swiperInit = 'true';
