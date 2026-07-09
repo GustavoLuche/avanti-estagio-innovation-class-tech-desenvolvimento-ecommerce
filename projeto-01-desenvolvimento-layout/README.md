@@ -1,6 +1,15 @@
 # Projeto 01 - Desenvolvimento do Layout
 
-Estrutura inicial do projeto HTML/CSS/JavaScript para implementacao fiel ao layout do Figma.
+Implementação completa de uma landing page em HTML, CSS e JavaScript, seguindo a referência do Figma com foco em desktop e mobile.
+
+## O que foi entregue
+
+- Estrutura completa da página com header, hero, seções de produtos, newsletter e footer
+- Estilização visual próxima ao protótipo, incluindo tipografia, cores, cards e botões
+- Carrossel de produtos com navegação e comportamento contínuo
+- Versão responsiva para telas mobile
+- Ícones e imagens adicionais para reforçar a identidade visual
+- Feedback de busca simples no formulário de pesquisa
 
 ## Estrutura
 
@@ -13,20 +22,26 @@ Estrutura inicial do projeto HTML/CSS/JavaScript para implementacao fiel ao layo
 |- styles/
 |  |- main.css
 |- index.html
+|- README.md
 ```
 
 ## Como executar
 
-Abra o arquivo `index.html` no navegador.
+Você pode abrir o arquivo `index.html` diretamente no navegador ou, de forma mais segura, rodar um servidor local simples:
 
-Opcionalmente, rode um servidor local simples para evitar problemas de caminhos:
+```bash
+python -m http.server 8000
+```
 
-- VS Code Live Server
-- Ou outro servidor estatico de sua preferencia
+Depois acesse:
 
-## Proximos passos
+```text
+http://127.0.0.1:8000/
+```
 
-- Ajustar estrutura HTML para o layout final do Figma
-- Substituir estilos base pelos valores reais (cores, tipografia, espacamentos)
-- Trocar placeholders por conteudo real
-- Manter responsividade desktop e mobile conforme design
+## Observações
+
+- O projeto foi pensado para ser estático e simples de visualizar localmente.
+- A implementação já contempla componentes principais do layout e uma adaptação responsiva para mobile.
+- Se quiser evoluir futuramente, os próximos passos naturais seriam integrar conteúdo real, imagens de produtos mais específicas e animações adicionais.
+
