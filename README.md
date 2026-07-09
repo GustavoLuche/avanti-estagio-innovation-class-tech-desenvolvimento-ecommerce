@@ -18,7 +18,6 @@ Concentrar os dois projetos solicitados no processo seletivo em um unico reposit
 .
 |- projeto-01-desenvolvimento-layout/
 |- projeto-02-busca-perfil-github/
-|- proxima-etapa-testes-tecnicos.md
 |- README.md
 ```
 
@@ -56,11 +55,11 @@ Cada pasta deve ser executavel de forma independente.
 
 ## Checklist final antes de enviar na Plooral
 
-- [ ] Projeto 01 implementado com responsividade e carrosseis
-- [ ] Projeto 01 com busca exibindo: "Voce buscou por: 'assunto buscado'"
-- [ ] Projeto 02 implementado com busca de usuario no GitHub
-- [ ] Projeto 02 exibindo nome, foto e bio
-- [ ] Projeto 02 exibindo mensagem de erro para usuario nao encontrado
+- [x] Projeto 01 implementado com responsividade e carrosseis
+- [x] Projeto 01 com busca exibindo: "Voce buscou por: 'assunto buscado'"
+- [x] Projeto 02 implementado com busca de usuario no GitHub
+- [x] Projeto 02 exibindo nome, foto e bio
+- [x] Projeto 02 exibindo mensagem de erro para usuario nao encontrado
 - [ ] Validacao visual com base no Figma (desktop e mobile)
 - [ ] Repositorio publico e com arquivos completos
 - [ ] Link conferido e enviado exclusivamente pela Plooral

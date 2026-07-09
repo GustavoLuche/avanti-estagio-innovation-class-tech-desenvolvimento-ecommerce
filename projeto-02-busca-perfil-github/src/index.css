@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: #1f1f1f;
+  color: #ffffff;
+}
