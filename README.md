@@ -52,7 +52,7 @@ Cada pasta deve ser executavel de forma independente.
 ## GitHub Pages
 
 - Projeto 01: https://gustavoluche.github.io/avanti-estagio-innovation-class-tech-desenvolvimento-ecommerce/projeto-01-desenvolvimento-layout/
-- Projeto 02: https://gustavoluche.github.io/GitHubUserSearch-React/
+- Projeto 02: https://gustavoluche.github.io/avanti-estagio-innovation-class-tech-desenvolvimento-ecommerce/projeto-02-busca-perfil-github/
 
 ## Checklist final antes de enviar na Plooral
 
