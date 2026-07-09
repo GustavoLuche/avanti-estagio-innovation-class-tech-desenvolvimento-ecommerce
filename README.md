@@ -60,9 +60,9 @@ Cada pasta deve ser executavel de forma independente.
 - [x] Projeto 02 implementado com busca de usuario no GitHub
 - [x] Projeto 02 exibindo nome, foto e bio
 - [x] Projeto 02 exibindo mensagem de erro para usuario nao encontrado
-- [ ] Validacao visual com base no Figma (desktop e mobile)
-- [ ] Repositorio publico e com arquivos completos
-- [ ] Link conferido e enviado exclusivamente pela Plooral
+- [x] Validacao visual com base no Figma (desktop e mobile)
+- [x] Repositorio publico e com arquivos completos
+- [x] Link conferido e enviado exclusivamente pela Plooral
 
 ## Referencias dos layouts
 

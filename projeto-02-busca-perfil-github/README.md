@@ -69,3 +69,10 @@ npm run preview
 
 - O `base` em `vite.config.js` já está configurado para a rota de publicação no GitHub Pages deste repositório.
 - O visual foi implementado a partir das telas e do CSS exportados do Figma; recomenda-se uma conferência visual lado a lado com o protótipo antes da entrega final.
+
+## Referência
+
+Existe um projeto anterior com proposta semelhante (busca de perfil no GitHub) disponível em:
+
+- Repositório: https://github.com/GustavoLuche/GitHubUserSearch-React
+- Demo: https://gustavoluche.github.io/GitHubUserSearch-React/
