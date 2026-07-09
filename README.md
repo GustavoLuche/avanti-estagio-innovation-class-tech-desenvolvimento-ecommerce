@@ -49,6 +49,11 @@ Concentrar os dois projetos solicitados no processo seletivo em um unico reposit
 
 Cada pasta deve ser executavel de forma independente.
 
+## GitHub Pages
+
+- Projeto 01: https://gustavoluche.github.io/avanti-estagio-innovation-class-tech-desenvolvimento-ecommerce/projeto-01-desenvolvimento-layout/
+- Projeto 02: https://gustavoluche.github.io/GitHubUserSearch-React/
+
 ## Checklist final antes de enviar na Plooral
 
 - [ ] Projeto 01 implementado com responsividade e carrosseis
