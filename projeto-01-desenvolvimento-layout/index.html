@@ -14,6 +14,10 @@
 
       <div class="header-main">
         <div class="container header-main-content">
+          <button type="button" class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-departments">
+            <img src="./assets/images/icon-hamburger.svg" alt="" aria-hidden="true" />
+          </button>
+
           <a class="logo" href="#" aria-label="AVANTI">
             <img src="./assets/images/logo.svg" alt="AVANTI" class="logo-img" />
           </a>
@@ -42,7 +46,7 @@
         </div>
       </div>
 
-      <nav class="departments">
+      <nav class="departments" id="mobile-departments">
         <div class="container departments-content" aria-label="Categorias">
           <a href="#" class="departments-menu">
             <img src="./assets/images/icon-hamburger.svg" alt="Menu" class="departments-menu-icon" />
@@ -62,7 +66,10 @@
 
     <main>
       <section class="hero" aria-label="Super Sale">
-        <img src="./assets/images/hero.png" alt="Banner principal Super Sale" />
+        <picture>
+          <source srcset="./assets/images/hero-mobile.png" media="(max-width: 900px)" />
+          <img src="./assets/images/hero.png" alt="Banner principal Super Sale" />
+        </picture>
       </section>
 
       <section class="search-feedback-wrap">
@@ -626,7 +633,10 @@
       </section>
 
       <section class="contact-banner" aria-label="Contato por regiao">
-        <img src="./assets/images/contact-bg.png" alt="Banner de contato AVANTI" />
+        <picture>
+          <source srcset="./assets/images/contact-bg-mobile.png" media="(max-width: 900px)" />
+          <img src="./assets/images/contact-bg.png" alt="Banner de contato AVANTI" />
+        </picture>
         <div class="contact-overlay">Entre em contato conosco e verifique a disponibilidade para sua regiao!</div>
       </section>
 
@@ -666,7 +676,10 @@
           </div>
 
           <div class="footer-links">
-            <h4>Institucional</h4>
+            <button type="button" class="footer-links-toggle" aria-expanded="false">
+              Institucional
+              <img src="./assets/images/icon-chevron-down.svg" alt="" aria-hidden="true" class="footer-links-chevron" />
+            </button>
             <ul>
               <li><a href="#">Sobre Nós</a></li>
               <li><a href="#">Nossas Lojas</a></li>
@@ -676,7 +689,10 @@
           </div>
 
           <div class="footer-links">
-            <h4>Central de ajuda</h4>
+            <button type="button" class="footer-links-toggle" aria-expanded="false">
+              Central de ajuda
+              <img src="./assets/images/icon-chevron-down.svg" alt="" aria-hidden="true" class="footer-links-chevron" />
+            </button>
             <ul>
               <li><a href="#">Fale Conosco</a></li>
               <li><a href="#">Frete e Entrega</a></li>
@@ -687,7 +703,10 @@
           </div>
 
           <div class="footer-links">
-            <h4>Atendimento</h4>
+            <button type="button" class="footer-links-toggle" aria-expanded="false">
+              Atendimento
+              <img src="./assets/images/icon-chevron-down.svg" alt="" aria-hidden="true" class="footer-links-chevron" />
+            </button>
             <ul>
               <li><strong>Telefone:</strong> (00) 1234-5678</li>
               <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>

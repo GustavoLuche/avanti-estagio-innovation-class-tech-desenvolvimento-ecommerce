@@ -17,6 +17,25 @@ if (searchForm && searchInput && searchResult) {
   });
 }
 
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const mobileDepartments = document.querySelector('#mobile-departments');
+
+if (mobileMenuToggle && mobileDepartments) {
+  mobileMenuToggle.addEventListener('click', () => {
+    const isOpen = mobileDepartments.classList.toggle('is-open');
+    mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+document.querySelectorAll('.footer-links-toggle').forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    const footerLinks = toggle.closest('.footer-links');
+    if (!footerLinks) return;
+    const isOpen = footerLinks.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+});
+
 function cloneCard(card) {
   const clone = card.cloneNode(true);
   clone.classList.add('clone');
@@ -98,6 +117,7 @@ window.addEventListener('load', () => {
 
       const realSlideCount = track.children.length;
       const slidesPerView = Math.min(5, realSlideCount);
+      const mobileSlidesPerView = Math.min(2, realSlideCount);
 
       // Move existing children into a swiper-wrapper and mark slides
       const wrapper = document.createElement('div');
@@ -125,14 +145,15 @@ window.addEventListener('load', () => {
       const dotsEl = shell.parentElement.querySelector('.carousel-dots');
       if (dotsEl) dotsEl.textContent = '';
 
-      // Initialize Swiper with loop enabled (continuous loop).
+      // Initialize Swiper mobile-first: 2 cards per view on small screens
+      // (matches the Figma mobile layout), 5 per view from 901px up.
       // Loop needs more real slides than slidesPerView, otherwise Swiper
       // can't build enough duplicates and the navigation breaks.
       new Swiper(track, {
-        slidesPerView,
-        slidesPerGroup: slidesPerView,
-        spaceBetween: 16,
-        loop: realSlideCount > slidesPerView,
+        slidesPerView: mobileSlidesPerView,
+        slidesPerGroup: mobileSlidesPerView,
+        spaceBetween: 12,
+        loop: realSlideCount > mobileSlidesPerView,
         rewind: false,
         navigation: {
           nextEl: nextBtn || '.swiper-button-next',
@@ -144,6 +165,14 @@ window.addEventListener('load', () => {
               clickable: true,
             }
           : false,
+        breakpoints: {
+          901: {
+            slidesPerView,
+            slidesPerGroup: slidesPerView,
+            spaceBetween: 16,
+            loop: realSlideCount > slidesPerView,
+          },
+        },
       });
 
       track.dataset.swiperInit = 'true';
